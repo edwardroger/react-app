@@ -13,9 +13,6 @@ const App = () => {
                 <Route path='/login' element={ <Login /> } />
                 <Route path='/register' element={ <Register /> } />
             </Routes>
-            <Link to='/login' state={{ some: "value" }}>Login</Link>
-            <Link to='/register'>Register</Link>
-            <Link to='/'>Home</Link>
             {/* Bài tập:
             1. Tạo ra 3 pages: 
                 + page: Trang chủ (Chứa màn hình chính)
