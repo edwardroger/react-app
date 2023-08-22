@@ -1,0 +1,28 @@
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+
+    .row {
+        width: auto;
+        height: 200px;
+        
+        .content {
+            &.__header {
+                img {
+
+                }
+            }
+
+            &.__body  {
+                &.-title {
+
+                }
+            }
+
+            &.__footer {
+
+            }
+        }
+    }
+}

@@ -3,6 +3,9 @@ import { Routes, Route, Link, NavLink } from 'react-router-dom'
 import HomePage from './Containers/HomePage'
 import Login from './Containers/Login'
 import Register from './Containers/Register'
+import CallAPI from './Containers/CallAPI'
+import User from './Containers/User'
+import UserProfile from './Containers/UserProfile'
 
 //React - Router - DOM version 6
 const App = () => {
@@ -12,14 +15,10 @@ const App = () => {
                 <Route path='/' element={ <HomePage /> } />
                 <Route path='/login' element={ <Login /> } />
                 <Route path='/register' element={ <Register /> } />
+                <Route path='/call-api' element={ <CallAPI /> } />
+                <Route path='/user' element={ <User /> } />
+                <Route path='/user-profile' element={ <UserProfile /> } />
             </Routes>
-            {/* Bài tập:
-            1. Tạo ra 3 pages: 
-                + page: Trang chủ (Chứa màn hình chính)
-                + page: profile (Chứa trang thông tin user)
-                + page: Trang login (Chứa form login)
-            2. Tạo ra các nút để chuyển trang (Thẻ Link được đặt trong component)
-            3. Gửi thông tin: (Ví dụ, sau khi ấn login thì sẽ gửi email qua màn hình Profile) */}
         </>
     )
 }
