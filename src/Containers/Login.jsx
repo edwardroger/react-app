@@ -10,7 +10,6 @@ const Login = () => {
     const dispatch = useDispatch();
 
     const authRedux = useSelector(state => state.auth)
-    console.log(authRedux);
 
     const handleOnchangeEmail = (e) => {
         setEmail(e.target.value);
